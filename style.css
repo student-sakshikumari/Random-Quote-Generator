@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair", serif;
+}
+body{
+    background-color: #bbc6fa;
+}
+.head{
+    background: #fff;
+    width: 900px;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.head h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.head h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.head qute{
+    font-size: 26px;
+    min-height: 126px;
+}
+.head qute::before ,.head qute::after{
+    content: '"';
+}
+.head span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.head span::before{
+    content: '';
+    width: 20px;
+    height: 1.2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -23px;
+}
+.btn{
+    font-size: 19px;
+    border-radius: 1.5rem;
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    background-color: rgb(23, 124, 229);
+}
+.btn:active{
+    background-color: rgb(214, 217, 221);
+}
